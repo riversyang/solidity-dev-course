@@ -22,7 +22,7 @@ contract SimplePoS is Ownable {
      * @dev 将合约创建者指定为第一个矿工，以保证合约的运作
      * @notice 
      */
-    constructor() payable public {
+    constructor() public payable {
         allMiners.push(msg.sender);
         minerStakes[msg.sender] = msg.value;
         totalStake = msg.value;

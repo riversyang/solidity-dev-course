@@ -37,7 +37,7 @@ contract SimpleRndOracle is Ownable {
     /**
      * @dev 可接受捐赠的 fallback 函数
      */
-    function() payable public {
+    function() external payable {
         // empty fallback function to receive donation
     }
 
